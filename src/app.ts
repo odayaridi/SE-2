@@ -1,52 +1,117 @@
-import {
-    FinanceCalculator,
-    ItemValidator,
-    MaxPriceValidator,
-    OrderManagement,
-    PriceValidator,
-    Validator
-} from "./app-clean";
 
-const orders = [
-  { id: 1, item: "Sponge", price: 15 },
-  { id: 2, item: "Chocolate", price: 20 },
-  { id: 3, item: "Fruit", price: 18 },
-  { id: 4, item: "Red Velvet", price: 25 },
-  { id: 5, item: "Coffee", price: 0 },
-];
 
-const rules = [
-  new PriceValidator(),
-  new MaxPriceValidator(),
-  new ItemValidator()
-];
-
-const orderManager = new OrderManagement(new Validator(rules), new FinanceCalculator());
-
-for (const order of orders) {
-  orderManager.addOrder(order.item, order.price);
+export interface Order{
+    price:number,
+    id:number,
+    item:string
 }
 
-// Adding a new order directly
-const newItem = "Marble";
-const newPrice = 22;
+export class OrderManagement{
+    // get orders, store orders, and add orders
+    private orders: Order[] = [];
+    constructor(private validator : IValidator, private calculator : ICalculator){
 
-orderManager.addOrder(newItem, newPrice);
+    }
+    getOrders(){
+        return this.orders;
+    }
+    addOrder(item:string,price:number){
+        const order: Order = {id: this.orders.length + 1,item, price};
+        this.validator.validate(order);
+        this.orders.push(order);
+    }
+    getOrder(id:number){
+        return this.getOrders().find(order => order.id === id);
+    }
 
-console.log("Orders after adding a new order", orderManager.getOrders());
+    getTotalRevenue() {
+        return this.calculator.getRevenue(this.orders);
+    }
 
-// Calculate Total Revenue directly
-console.log("Total Revenue: ", orderManager.getTotalRevenue());
+    getBuyPower(){
+        return this.calculator.getAverageBuyPower(this.orders);
+    }
+}
 
-// Calculate Average Buy Power directly
-console.log("Average Buy Power:", orderManager.getBuyPower());
+export class PremiumOrderManagement extends OrderManagement {
+    getOrder(id:number) : Order | undefined {
+        console.log("Alert: Premium order being fetched");
+        return super.getOrder(id);
+    }
+}
 
-// Fetching an order directly
-const fetchId = 2;
-const fetchedOrder = orderManager.getOrder(fetchId);
-console.log("Order with ID 2:", fetchedOrder);
 
-// Attempt to fetch a non-existent order
-const nonExistentId = 10;
-const nonExistentOrder = orderManager.getOrder(nonExistentId);
-console.log("Order with ID 10 (non-existent):", nonExistentOrder);
+interface IValidator{
+    validate(order: Order) : void;
+}
+
+interface IPossibleItems {
+    getPossibleItems() : string[];
+}
+
+export class Validator implements IValidator {
+  private rules: IValidator[] = [
+    new PriceValidator(),
+    new MaxPriceValidator(),
+    new ItemValidator()
+  ];
+
+  validate(order: Order): void {
+    this.rules.forEach(rule => rule.validate(order));
+  }
+}
+
+export class ItemValidator implements IValidator, IPossibleItems {
+  private static possibleItems = [
+    "Sponge",
+    "Chocolate",
+    "Fruit",
+    "Red Velvet",
+    "Birthday",
+    "Carrot",
+    "Marble",
+    "Coffee",
+  ];
+
+  getPossibleItems(): string[] {
+      return ItemValidator.possibleItems;
+  }
+  validate(order: Order) {
+    if (!ItemValidator.possibleItems.includes(order.item)) {
+      throw new Error(
+        `Invalid item. Must be one of: ${ItemValidator.possibleItems.join(", ")}`
+      );
+    }
+  }
+}
+export class PriceValidator implements IValidator {
+         validate(order: Order){
+        if(order.price <= 0){
+            throw new Error("Price must be greater than zero");
+        }
+    }
+}
+export class MaxPriceValidator implements IValidator{
+    validate(order : Order){
+        if(order.price > 100){
+            throw new Error("Price must be less than 100");
+        }
+    }
+}
+
+
+interface ICalculator {
+    getRevenue(orders: Order[]): number;
+    getAverageBuyPower(orders: Order[]): number;
+}
+export class FinanceCalculator implements ICalculator{
+  public   getRevenue(orders: Order[]){
+        return  orders.reduce((total, order) => total + order.price, 0);
+    }
+
+      // calculate total revenue and average by power
+   public  getAverageBuyPower(orders: Order[]){
+        return orders.length === 0 ? 0: this.getRevenue(orders)/orders.length;
+    }
+  
+}
