@@ -17,6 +17,8 @@ export const parseCSV = (filePath: string): Promise<string[][]> => {
       });
     });
 
+    console.log("test");
+
     readStream.on('end', () => {
       resolve(results); // Resolve the promise with parsed data when done
     });
