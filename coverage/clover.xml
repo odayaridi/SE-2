@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1784056724570" clover="3.2.0">
-  <project timestamp="1784056724570" name="All files">
+<coverage generated="1784317159180" clover="3.2.0">
+  <project timestamp="1784317159180" name="All files">
     <metrics statements="30" coveredstatements="29" conditionals="8" coveredconditionals="6" methods="18" coveredmethods="18" elements="56" coveredelements="53" complexity="0" loc="30" ncloc="30" packages="1" files="1" classes="1"/>
     <file name="app.ts" path="C:\Users\Oday\Documents\SE2\src\app.ts">
       <metrics statements="30" coveredstatements="29" conditionals="8" coveredconditionals="6" methods="18" coveredmethods="18"/>
@@ -18,7 +18,7 @@
       <line num="38" count="1" type="stmt"/>
       <line num="39" count="1" type="stmt"/>
       <line num="52" count="1" type="stmt"/>
-      <line num="53" count="4" type="stmt"/>
+      <line num="53" count="2" type="stmt"/>
       <line num="60" count="18" type="stmt"/>
       <line num="64" count="1" type="stmt"/>
       <line num="65" count="1" type="stmt"/>

@@ -9,11 +9,20 @@ import {
 } from "../src/app";
 
 describe("OrderManagement", () => {
-  it("should get an order by id", () => {
-    const validator = new Validator();
-    const calc = new FinanceCalculator();
-    const orderManager = new OrderManagement(validator, calc);
+  let validator: Validator;
+  let calc: FinanceCalculator;
+  let orderManager: OrderManagement;
 
+  beforeAll(() => {
+    validator = new Validator();
+    calc = new FinanceCalculator();
+  });
+
+  beforeEach(() => {
+    orderManager = new OrderManagement(validator, calc);
+  });
+
+  it("should get an order by id", () => {
     orderManager.addOrder("Sponge", 15);
 
     expect(orderManager.getOrder(1)).toEqual({
@@ -24,10 +33,6 @@ describe("OrderManagement", () => {
   });
 
   it("should calculate total revenue", () => {
-    const validator = new Validator();
-    const calc = new FinanceCalculator();
-    const orderManager = new OrderManagement(validator, calc);
-
     orderManager.addOrder("Sponge", 15);
     orderManager.addOrder("Chocolate", 25);
 
@@ -35,10 +40,6 @@ describe("OrderManagement", () => {
   });
 
   it("should calculate average buy power", () => {
-    const validator = new Validator();
-    const calc = new FinanceCalculator();
-    const orderManager = new OrderManagement(validator, calc);
-
     orderManager.addOrder("Sponge", 20);
     orderManager.addOrder("Chocolate", 40);
 
@@ -47,11 +48,20 @@ describe("OrderManagement", () => {
 });
 
 describe("PremiumOrderManagement", () => {
-  it("should fetch an order", () => {
-    const validator = new Validator();
-    const calc = new FinanceCalculator();
-    const manager = new PremiumOrderManagement(validator, calc);
+  let validator: Validator;
+  let calc: FinanceCalculator;
+  let manager: PremiumOrderManagement;
 
+  beforeAll(() => {
+    validator = new Validator();
+    calc = new FinanceCalculator();
+  });
+
+  beforeEach(() => {
+    manager = new PremiumOrderManagement(validator, calc);
+  });
+
+  it("should fetch an order", () => {
     manager.addOrder("Sponge", 15);
 
     expect(manager.getOrder(1)).toEqual({
@@ -63,17 +73,25 @@ describe("PremiumOrderManagement", () => {
 });
 
 describe("ItemValidator", () => {
-  it("should return possible items", () => {
-    const validator = new ItemValidator();
+  let validator: ItemValidator;
 
+  beforeEach(() => {
+    validator = new ItemValidator();
+  });
+
+  it("should return possible items", () => {
     expect(validator.getPossibleItems()).toContain("Sponge");
   });
 });
 
 describe("PriceValidator", () => {
-  it("should throw if price is zero", () => {
-    const validator = new PriceValidator();
+  let validator: PriceValidator;
 
+  beforeEach(() => {
+    validator = new PriceValidator();
+  });
+
+  it("should throw if price is zero", () => {
     expect(() =>
       validator.validate({
         id: 1,
@@ -85,9 +103,13 @@ describe("PriceValidator", () => {
 });
 
 describe("MaxPriceValidator", () => {
-  it("should throw if price is greater than 100", () => {
-    const validator = new MaxPriceValidator();
+  let validator: MaxPriceValidator;
 
+  beforeEach(() => {
+    validator = new MaxPriceValidator();
+  });
+
+  it("should throw if price is greater than 100", () => {
     expect(() =>
       validator.validate({
         id: 1,
@@ -99,9 +121,13 @@ describe("MaxPriceValidator", () => {
 });
 
 describe("FinanceCalculator", () => {
-  it("should calculate revenue", () => {
-    const calc = new FinanceCalculator();
+  let calc: FinanceCalculator;
 
+  beforeEach(() => {
+    calc = new FinanceCalculator();
+  });
+
+  it("should calculate revenue", () => {
     expect(
       calc.getRevenue([
         { id: 1, item: "Sponge", price: 10 },
@@ -111,8 +137,6 @@ describe("FinanceCalculator", () => {
   });
 
   it("should calculate average buy power", () => {
-    const calc = new FinanceCalculator();
-
     expect(
       calc.getAverageBuyPower([
         { id: 1, item: "Sponge", price: 10 },
