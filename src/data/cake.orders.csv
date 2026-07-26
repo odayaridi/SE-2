@@ -1,0 +1,81 @@
+OrderID,Category,Flavor,Filling,Size,Layers,Topping,Frosting,Decoration,Color,Message,Shape,SpecialRequest,DietType,Packaging,Price,Quantity
+259,Sponge,Caramel,Mousse,30,4,Ganache,Red Velvet,Gold Flakes,Pink,Happy Anniversary,Square,None,Organic,Standard Box,146,1
+260,Fruit,Pineapple,Custard,30,4,Whipped Cream,Chocolate,Sprinkles,White,Thank You,Square,None,Organic,Standard Box with Ribbon,151,2
+261,Fruit,Red Velvet,Custard,25,2,Ganache,Pineapple,Gold Flakes,Gold,Happy Anniversary,Rectangle,Gluten-Free,None,Standard Box,154,4
+262,Chocolate,Vanilla,Custard,25,3,Whipped Cream,Strawberry,Gold Flakes,White,Congratulations,Square,Dairy-Free,Organic,Standard Box,97,3
+263,Sponge,Chocolate,Mousse,20,2,Ganache,Chocolate,Cherries,Red,Happy Birthday,Round,None,Regular,Standard Box,88,2
+264,Fruit,Mango,Cream,22,2,Whipped Cream,Vanilla,Fresh Fruit,Yellow,Best Wishes,Round,None,Organic,Gift Box,102,1
+265,Chocolate,Black Forest,Mousse,24,3,Ganache,Chocolate,Chocolate Chips,Brown,Happy Birthday,Square,None,Regular,Standard Box,135,2
+266,Sponge,Vanilla,Custard,18,1,Buttercream,Vanilla,Sprinkles,Blue,Welcome Home,Round,None,Regular,Standard Box,65,1
+267,Fruit,Strawberry,Cream,20,2,Whipped Cream,Strawberry,Fresh Berries,Pink,Happy Birthday,Heart,None,Organic,Ribbon Box,99,1
+268,Chocolate,Caramel,Mousse,30,4,Ganache,Chocolate,Gold Flakes,Gold,Congratulations,Square,None,Premium,Premium Box,182,1
+269,Sponge,Red Velvet,Cream,22,2,Buttercream,Red Velvet,Sprinkles,Red,Thank You,Round,None,Regular,Standard Box,91,3
+270,Fruit,Blueberry,Custard,24,2,Whipped Cream,Vanilla,Blueberries,Purple,Happy Anniversary,Round,None,Organic,Gift Box,112,2
+271,Chocolate,Mocha,Mousse,28,3,Ganache,Chocolate,Cocoa Dust,Brown,Best Wishes,Square,None,Premium,Standard Box,145,2
+272,Sponge,Lemon,Cream,18,1,Buttercream,Lemon,Lemon Zest,Yellow,Enjoy,Round,None,Regular,Standard Box,62,4
+273,Fruit,Kiwi,Custard,20,2,Whipped Cream,Vanilla,Kiwi Slices,Green,Happy Birthday,Round,None,Organic,Gift Box,101,1
+274,Chocolate,Dark Chocolate,Ganache,26,3,Ganache,Chocolate,Chocolate Shavings,Black,Congratulations,Rectangle,None,Premium,Premium Box,168,2
+275,Sponge,Vanilla,Mousse,24,2,Buttercream,Vanilla,Silver Pearls,White,Happy Birthday,Square,None,Regular,Standard Box,95,2
+276,Fruit,Pineapple,Cream,22,2,Whipped Cream,Pineapple,Fresh Fruit,Yellow,Thank You,Round,None,Organic,Gift Box,104,3
+277,Chocolate,Hazelnut,Mousse,30,4,Ganache,Chocolate,Hazelnuts,Brown,Happy Anniversary,Square,None,Premium,Premium Box,188,1
+278,Sponge,Orange,Cream,20,2,Buttercream,Orange,Candied Orange,Orange,Best Wishes,Round,None,Regular,Standard Box,84,2
+279,Fruit,Mixed Fruit,Custard,26,3,Whipped Cream,Vanilla,Fruit Mix,White,Congratulations,Rectangle,None,Organic,Ribbon Box,134,1
+280,Chocolate,White Chocolate,Mousse,24,2,Ganache,White Chocolate,Chocolate Curls,White,Happy Birthday,Heart,None,Premium,Premium Box,156,2
+281,Sponge,Chocolate,Custard,22,2,Buttercream,Chocolate,Sprinkles,Brown,Enjoy,Round,None,Regular,Standard Box,87,3
+282,Fruit,Mango,Cream,18,1,Whipped Cream,Mango,Mango Cubes,Yellow,Thank You,Round,None,Organic,Gift Box,72,2
+283,Chocolate,Caramel,Ganache,28,3,Ganache,Chocolate,Caramel Drizzle,Brown,Happy Birthday,Square,None,Premium,Premium Box,162,1
+284,Sponge,Vanilla,Cream,20,2,Buttercream,Vanilla,Sprinkles,White,Welcome,Round,None,Regular,Standard Box,79,2
+285,Fruit,Peach,Custard,22,2,Whipped Cream,Vanilla,Peach Slices,Orange,Happy Anniversary,Heart,None,Organic,Ribbon Box,106,2
+286,Chocolate,Mocha,Cream,24,2,Ganache,Mocha,Cocoa Dust,Brown,Best Wishes,Round,None,Premium,Premium Box,141,1
+287,Sponge,Caramel,Cream,18,1,Buttercream,Caramel,Toffee Bits,Gold,Thank You,Round,None,Regular,Standard Box,69,4
+288,Fruit,Strawberry,Mousse,26,3,Whipped Cream,Strawberry,Berries,Pink,Congratulations,Square,None,Organic,Gift Box,129,2
+289,Chocolate,Dark Chocolate,Mousse,30,4,Ganache,Chocolate,Gold Flakes,Gold,Happy Birthday,Square,None,Premium,Premium Box,191,1
+290,Sponge,Red Velvet,Cream,24,2,Buttercream,Red Velvet,Red Sprinkles,Red,Happy Anniversary,Heart,None,Regular,Ribbon Box,98,2
+291,Fruit,Blueberry,Cream,20,2,Whipped Cream,Blueberry,Blueberries,Blue,Best Wishes,Round,None,Organic,Gift Box,94,2
+292,Chocolate,Milk Chocolate,Custard,22,2,Ganache,Chocolate,Chocolate Chips,Brown,Enjoy,Round,None,Regular,Standard Box,93,3
+293,Sponge,Lemon,Custard,18,1,Buttercream,Lemon,Lemon Zest,Yellow,Welcome,Round,None,Regular,Standard Box,61,2
+294,Fruit,Pineapple,Mousse,24,2,Whipped Cream,Pineapple,Fresh Fruit,Yellow,Happy Birthday,Square,None,Organic,Gift Box,118,1
+295,Chocolate,Hazelnut,Ganache,28,3,Ganache,Hazelnut,Hazelnuts,Brown,Thank You,Rectangle,None,Premium,Premium Box,171,2
+296,Sponge,Chocolate,Cream,20,2,Buttercream,Chocolate,Chocolate Chips,Brown,Congratulations,Round,None,Regular,Standard Box,83,2
+297,Fruit,Mango,Custard,26,3,Whipped Cream,Mango,Mango Cubes,Yellow,Happy Anniversary,Heart,None,Organic,Ribbon Box,132,1
+298,Chocolate,White Chocolate,Cream,24,2,Ganache,White Chocolate,Chocolate Curls,White,Happy Birthday,Round,None,Premium,Premium Box,149,2
+299,Sponge,Vanilla,Custard,22,2,Buttercream,Vanilla,Silver Pearls,White,Best Wishes,Square,None,Regular,Standard Box,90,3
+300,Fruit,Kiwi,Cream,18,1,Whipped Cream,Kiwi,Kiwi Slices,Green,Enjoy,Round,None,Organic,Gift Box,73,2
+301,Chocolate,Caramel,Mousse,30,4,Ganache,Chocolate,Gold Flakes,Gold,Happy Birthday,Square,None,Premium,Premium Box,185,1
+302,Sponge,Orange,Cream,20,2,Buttercream,Orange,Candied Orange,Orange,Welcome,Round,None,Regular,Standard Box,82,2
+303,Fruit,Mixed Fruit,Custard,24,2,Whipped Cream,Vanilla,Fruit Mix,White,Thank You,Rectangle,None,Organic,Ribbon Box,120,2
+304,Chocolate,Mocha,Ganache,28,3,Ganache,Mocha,Cocoa Dust,Brown,Congratulations,Square,None,Premium,Premium Box,166,1
+305,Sponge,Red Velvet,Mousse,22,2,Buttercream,Red Velvet,Gold Flakes,Red,Happy Anniversary,Heart,None,Regular,Standard Box,97,2
+306,Fruit,Peach,Cream,20,2,Whipped Cream,Peach,Peach Slices,Orange,Happy Birthday,Round,None,Organic,Gift Box,92,3
+307,Chocolate,Dark Chocolate,Custard,24,2,Ganache,Chocolate,Chocolate Shavings,Black,Best Wishes,Square,None,Premium,Premium Box,152,2
+308,Sponge,Chocolate,Cream,18,1,Buttercream,Chocolate,Sprinkles,Brown,Enjoy,Round,None,Regular,Standard Box,64,2
+309,Fruit,Blueberry,Mousse,26,3,Whipped Cream,Blueberry,Blueberries,Blue,Happy Anniversary,Square,None,Organic,Ribbon Box,133,1
+310,Chocolate,Hazelnut,Cream,30,4,Ganache,Hazelnut,Hazelnuts,Brown,Congratulations,Rectangle,None,Premium,Premium Box,189,1
+311,Sponge,Vanilla,Cream,24,2,Buttercream,Vanilla,Silver Pearls,White,Thank You,Round,None,Regular,Standard Box,89,3
+312,Fruit,Mango,Custard,22,2,Whipped Cream,Mango,Mango Cubes,Yellow,Welcome,Heart,None,Organic,Gift Box,105,2
+313,Chocolate,Milk Chocolate,Mousse,28,3,Ganache,Chocolate,Chocolate Chips,Brown,Happy Birthday,Square,None,Premium,Premium Box,164,2
+314,Sponge,Lemon,Cream,20,2,Buttercream,Lemon,Lemon Zest,Yellow,Best Wishes,Round,None,Regular,Standard Box,80,2
+315,Fruit,Pineapple,Cream,24,2,Whipped Cream,Pineapple,Fresh Fruit,Yellow,Enjoy,Round,None,Organic,Gift Box,109,3
+316,Chocolate,White Chocolate,Ganache,26,3,Ganache,White Chocolate,Chocolate Curls,White,Congratulations,Square,None,Premium,Premium Box,173,1
+317,Sponge,Caramel,Custard,22,2,Buttercream,Caramel,Toffee Bits,Gold,Happy Anniversary,Heart,None,Regular,Standard Box,94,2
+318,Fruit,Strawberry,Cream,18,1,Whipped Cream,Strawberry,Berries,Pink,Thank You,Round,None,Organic,Ribbon Box,75,2
+319,Chocolate,Mocha,Mousse,30,4,Ganache,Mocha,Cocoa Dust,Brown,Happy Birthday,Rectangle,None,Premium,Premium Box,193,1
+320,Sponge,Chocolate,Cream,24,2,Buttercream,Chocolate,Sprinkles,Brown,Welcome,Square,None,Regular,Standard Box,92,2
+321,Fruit,Kiwi,Custard,20,2,Whipped Cream,Kiwi,Kiwi Slices,Green,Best Wishes,Round,None,Organic,Gift Box,96,2
+322,Chocolate,Dark Chocolate,Cream,22,2,Ganache,Chocolate,Chocolate Shavings,Black,Happy Birthday,Heart,None,Premium,Premium Box,148,2
+323,Sponge,Vanilla,Mousse,18,1,Buttercream,Vanilla,Silver Pearls,White,Enjoy,Round,None,Regular,Standard Box,68,3
+324,Fruit,Mango,Cream,24,2,Whipped Cream,Mango,Mango Cubes,Yellow,Thank You,Square,None,Organic,Ribbon Box,115,1
+325,Chocolate,Hazelnut,Custard,28,3,Ganache,Hazelnut,Hazelnuts,Brown,Congratulations,Rectangle,None,Premium,Premium Box,169,2
+326,Sponge,Orange,Cream,20,2,Buttercream,Orange,Candied Orange,Orange,Happy Anniversary,Round,None,Regular,Standard Box,81,2
+327,Fruit,Blueberry,Cream,22,2,Whipped Cream,Blueberry,Blueberries,Blue,Happy Birthday,Heart,None,Organic,Gift Box,103,3
+328,Chocolate,Caramel,Ganache,30,4,Ganache,Chocolate,Gold Flakes,Gold,Best Wishes,Square,None,Premium,Premium Box,187,1
+329,Sponge,Red Velvet,Cream,24,2,Buttercream,Red Velvet,Red Sprinkles,Red,Thank You,Round,None,Regular,Standard Box,96,2
+330,Fruit,Pineapple,Custard,26,3,Whipped Cream,Pineapple,Fresh Fruit,Yellow,Congratulations,Rectangle,None,Organic,Ribbon Box,136,2
+331,Chocolate,White Chocolate,Mousse,22,2,Ganache,White Chocolate,Chocolate Curls,White,Happy Birthday,Heart,None,Premium,Premium Box,147,1
+332,Sponge,Chocolate,Cream,18,1,Buttercream,Chocolate,Sprinkles,Brown,Enjoy,Round,None,Regular,Standard Box,66,4
+333,Fruit,Strawberry,Mousse,24,2,Whipped Cream,Strawberry,Berries,Pink,Happy Anniversary,Square,None,Organic,Gift Box,121,2
+334,Chocolate,Mocha,Cream,28,3,Ganache,Mocha,Cocoa Dust,Brown,Thank You,Rectangle,None,Premium,Premium Box,165,2
+335,Sponge,Vanilla,Custard,20,2,Buttercream,Vanilla,Silver Pearls,White,Congratulations,Round,None,Regular,Standard Box,86,2
+336,Fruit,Kiwi,Cream,22,2,Whipped Cream,Kiwi,Kiwi Slices,Green,Happy Birthday,Heart,None,Organic,Ribbon Box,107,1
+337,Chocolate,Dark Chocolate,Ganache,30,4,Ganache,Chocolate,Gold Flakes,Gold,Happy Anniversary,Square,None,Premium,Premium Box,194,1
+338,Sponge,Caramel,Cream,24,2,Buttercream,Caramel,Toffee Bits,Gold,Best Wishes,Round,None,Regular,Standard Box,93,2
