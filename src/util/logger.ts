@@ -58,5 +58,5 @@ if (isDev) {
 }
 
 logger.error("This is an error log");
-
+logger.error("This is an error log from console.log");
 export default logger;
