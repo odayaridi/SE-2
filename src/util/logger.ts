@@ -57,6 +57,4 @@ if (isDev) {
   logger.level = "debug";
 }
 
-logger.error("This is an error log");
-logger.error("This is an error log from console.log");
 export default logger;
